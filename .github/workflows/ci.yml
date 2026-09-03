@@ -24,7 +24,7 @@ jobs:
       - name: Lancer les tests
         run: python -m pytest 
       - name: vérifier le style 
-        run : python -m flak8 .
+        run : python -m flake8 .
       - name: vérifier le formatage 
         run : python -m black --check .
       - name: vérifier les types 
